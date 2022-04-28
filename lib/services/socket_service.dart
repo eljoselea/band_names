@@ -19,7 +19,7 @@ class SocketService with ChangeNotifier {
   }
 
   void _initConfig() {
-    this._socket = IO.io('http://10.0.0.17:3000/', {
+    this._socket = IO.io('https://elsocketdeljoselea.herokuapp.com/', {
       'transports': ['websocket'],
       'autoConnect': true
     });
